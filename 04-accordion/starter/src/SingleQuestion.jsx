@@ -1,9 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react';
+import { FaPlusSquare, FaMinusSquare} from "react-icons/fa";
 
-const SingleQuestion = () => {
+const SingleQuestion = ({ title, info }) => {
+  const [showInfo, setShowInfo] = useState(false);
   return (
-    <div>SingleQuestion</div>
-  )
-}
+    <article className='question'>
+      <header>
+        <h5>{title}</h5>
+        <button className='question-btn' onClick={() => setShowInfo(!showInfo)}>
+          {showInfo ? <FaMinusSquare /> : <FaPlusSquare />}
+        </button>
+      </header>
+      {showInfo && <p>{info}</p>}
+    </article>
+  );
+};
 
-export default SingleQuestion
+export default SingleQuestion;
