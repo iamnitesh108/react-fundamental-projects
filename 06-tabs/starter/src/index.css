@@ -259,22 +259,21 @@ ul {
   margin: 5rem auto;
   max-width: var(--max-width);
 }
-
 .btn-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 0.5rem;
   flex-wrap: wrap;
-  margin-bottom: 4rem;
+  margin-button: 4rem;
 }
-
 .job-btn {
   background: transparent;
   border-color: transparent;
   letter-spacing: var(--letterSpacing);
   cursor: pointer;
   transition: var(--transition);
+  margin-bottom: 2.5rem;
 }
 .job-btn:hover {
   color: var(--primary-500);
@@ -284,7 +283,6 @@ ul {
   color: var(--primary-500);
   box-shadow: 0 2px var(--primary-500);
 }
-
 .job-company {
   text-transform: uppercase;
   color: var(--grey-700);
@@ -299,7 +297,6 @@ ul {
   letter-spacing: var(--letterSpacing);
   margin-bottom: 2rem;
 }
-
 .job-desc {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -311,13 +308,12 @@ ul {
 .job-icon {
   color: var(--primary-500);
 }
-
 .job-desc p {
   color: var(--grey-700);
-  line-height: 1.5;
+  line-height: 1.5rem;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width:992px) {
   .jobs-center {
     width: 90vw;
     display: grid;
@@ -334,6 +330,7 @@ ul {
   .job-btn:hover {
     box-shadow: -2px 0px var(--primary-500);
   }
+
   .active-btn {
     box-shadow: -2px 0px var(--primary-500);
   }
